@@ -28,7 +28,6 @@ class TicTacToeGame(object):
                     print str(e)
                     print "Input can not be parsed"
             else:
-                self.printBoard()
                 node = MiniMaxNode()
                 move = node.getBestMove(self.board)
                 x = int(move[0])
